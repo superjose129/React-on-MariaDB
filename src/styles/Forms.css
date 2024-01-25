@@ -1,0 +1,58 @@
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="city"],
+input[type="address"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+  box-sizing: border-box;
+}
+
+label {
+  color: gray;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.data-form {
+  padding: 80px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.data-form img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 0.3;
+}

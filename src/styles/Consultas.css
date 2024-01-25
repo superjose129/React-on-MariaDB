@@ -1,0 +1,142 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#b2afb44f;
+}
+
+.main {
+    background-color:#b2afb44f;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+}
+
+.main2 {
+    background-color:#b2afb44f;
+    width: 100%;
+    height:100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.main2 h1:first-child{
+    align-self: center;
+}
+.list {
+    width: 50%;
+    margin: 0 auto;
+}
+.main2 div span{
+    margin: 0 30px;
+}
+
+.main div {
+    margin: 0 30px;
+    width: 50%;
+    
+}
+
+ul {
+    
+    counter-reset: index;
+    padding: 0;
+    max-width: 300px;
+}
+
+ul li:first-child {
+    border-top: 1px solid rgb(61, 60, 60);
+}
+
+
+/* List element */
+
+li {
+    width: fit-content;
+    counter-increment: index;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(61, 60, 60);
+}
+
+
+/* Element counter */
+
+li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 30px;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    margin-left: 10px;
+    line-height: 1;
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0px;
+    color: #fff;
+    padding: 11px;
+    font-weight: 700;
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+button:hover {
+    transition: 0.3s;
+    box-shadow: 1px 1px 4px #8ec5fc;
+}
+li div{
+    display: flex;
+    flex-direction: column;
+}
+li div span:first-child{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.hijo{
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid rgb(61, 60, 60);
+    justify-content: center;
+}
+.main div .hijo:first-child{
+    border-top: 1px solid rgb(61, 60, 60);
+}
+.hijo div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hijo div span:first-child{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 0.3;
+  }
